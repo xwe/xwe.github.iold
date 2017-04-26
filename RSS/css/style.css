@@ -1,0 +1,103 @@
+*,
+*:after,
+*:before: {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+a:hover h2 {
+    text-decoration: underline;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: 100;
+    margin: 0 0 0 0.5em;
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.header {
+        background:#fff;
+    color: #000;
+    position: fixed;
+    top: 0;
+    width: 92%;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-weight:900;
+}
+
+.icon-list {
+    font-size: 1.5em;
+    color: #268bff;
+}
+
+.slide-menu {
+    position: absolute;
+    top: 3.5em;
+    padding: 1em;
+    background: rgba(255, 246, 162, 0.92);
+    height: 23%;
+    width: 10em;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.slide-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-menu li {
+    padding: 0;
+}
+
+.slide-menu li a {
+    color: #268bff;
+    display: block;
+    padding: 0.5em 0;
+    font-weight:900;
+}
+
+.menu-hidden .slide-menu {
+    transform: translate3d(-12em, 0, 0);
+    transition: transform 0.2s;
+}
+
+.feed {
+    margin: 4em 0 0;
+}
+
+.entry {
+    border-bottom: 1px solid #ddd;
+    padding: 1em;
+    margin: 0.5em 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
