@@ -256,8 +256,8 @@ var templates = {
         PublicEvent: "open sourced {{{repoLink}}}",
         PullRequestEvent: "{{payload.action}} pull request {{{pullRequestLink}}}<br>{{{userGravatar}}}<small>{{payload.pull_request.title}}</small>{{{mergeMessage}}}",
         PullRequestReviewCommentEvent: "commented on pull request {{{pullRequestLink}}}<br>{{{userGravatar}}}<small>{{comment}}</small>",
-        PushEvent: 'коммит по {{{branchLink}}}{{{repoLink}}}<br>                <ul class="gha-commits">{{#payload.commits}}<li><small>{{{committerGravatar}}} {{{shaLink}}} {{message}}</small></li>{{/payload.commits}}</ul>                <small class="gha-message-commits">{{{commitsMessage}}}</small>',
-        ReleaseEvent: 'released {{{tagLink}}} at {{{repoLink}}}<br>{{{userGravatar}}}<small><span class="octicon octicon-cloud-download"></span>  {{{zipLink}}}</small>',
+        PushEvent: 'изменил {{{branchLink}}}{{{repoLink}}}<br>                <ul class="gha-commits">{{#payload.commits}}<li><small>{{{committerGravatar}}} {{{shaLink}}} {{message}}</small></li>{{/payload.commits}}</ul>                <small class="gha-message-commits">{{{commitsMessage}}}</small>',
+        ReleaseEvent: 'released {{{tagLink}}} внутри {{{repoLink}}}<br>{{{userGravatar}}}<small><span class="octicon octicon-cloud-download"></span>  {{{zipLink}}}</small>',
         WatchEvent: "starred {{{repoLink}}}"
     },
     icons = {
