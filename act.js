@@ -1,3 +1,4 @@
+
 /*! github-activity - v0.1.4 - Copyright 2015 Casey Scarborough */
 function millisecondsToStr(a) {
     "use strict";
