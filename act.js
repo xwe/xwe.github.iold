@@ -3,21 +3,21 @@ function millisecondsToStr(a) {
     "use strict";
 
     function b(a) {
-        return a > 1 ? "s yfpfl" : " ago"
+        return a > 1 ? "s назад" : " ago"
     }
     var c = Math.floor(a / 1e3),
         d = Math.floor(c / 31536e3);
-    if (d) return d + " year" + b(d);
+    if (d) return d + " год" + b(d);
     var e = Math.floor((c %= 31536e3) / 2592e3);
-    if (e) return e + " month" + b(e);
+    if (e) return e + " месяц" + b(e);
     var f = Math.floor((c %= 2592e3) / 86400);
-    if (f) return f + " day" + b(f);
+    if (f) return f + " день" + b(f);
     var g = Math.floor((c %= 86400) / 3600);
     if (g) return "about " + g + " hour" + b(g);
     var h = Math.floor((c %= 3600) / 60);
-    if (h) return h + " minute" + b(h);
+    if (h) return h + " минут" + b(h);
     var i = c % 60;
-    return i ? i + " second" + b(i) : "just now"
+    return i ? i + " секунд" + b(i) : "только что"
 }
 
 function pluralize(a, b) {
