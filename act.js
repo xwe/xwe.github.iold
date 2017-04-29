@@ -245,7 +245,7 @@ var templates = {
         EventsNotFound: '<div class="gha-info">Events for user {{username}} not found.</div>',
         CommitCommentEvent: "commented on commit {{{commentLink}}}<br>{{{userGravatar}}}<small>{{comment}}</small>",
         CreateEvent: "created {{payload.ref_type}} {{{branchLink}}}{{{repoLink}}}",
-        DeleteEvent: "deleted {{payload.ref_type}} {{payload.ref}} at {{{repoLink}}}",
+        DeleteEvent: "deleted {{payload.ref_type}} {{payload.ref}} в {{{repoLink}}}",
         FollowEvent: "started following {{{targetLink}}}",
         ForkEvent: "forked {{{repoLink}}} to {{{forkLink}}}",
         GistEvent: "{{actionType}} {{{gistLink}}}",
