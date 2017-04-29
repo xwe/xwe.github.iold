@@ -3,7 +3,7 @@ function millisecondsToStr(a) {
     "use strict";
 
     function b(a) {
-        return a > 1 ? "s ago" : " ago"
+        return a > 1 ? "s yfpfl" : " ago"
     }
     var c = Math.floor(a / 1e3),
         d = Math.floor(c / 31536e3);
